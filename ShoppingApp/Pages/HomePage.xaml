@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingApp.Pages.HomePage"
+             xmlns:vm="clr-namespace:ShoppingApp.ViewModel"
+             xmlns:models="clr-namespace:ShoppingApp.Models"
+             x:DataType="vm:HomeViewModel"
+             BackgroundColor="red"
+             Title="HomePage">
+
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            
+            <Style TargetType="Label" x:Key="H1">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Margin" Value="0, 10"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="H2">
+                <Setter Property="FontSize" Value="22"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Margin" Value="0, 8"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="H3">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Margin" Value="0, 6"/>
+            </Style>
+            <Style TargetType="Label" x:Key="H4">
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Margin" Value="0, 4"/>
+            </Style>
+            <Style TargetType="Label" x:Key="H5">
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Margin" Value="0, 2"/>
+            </Style>
+            <Style TargetType="Label" x:Key="H6">
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Margin" Value="0, 1"/>
+            </Style>
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
+
+
+
+    
+
+        <VerticalStackLayout Padding="10, 15">
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Hi, &#10;"
+                                                  
+                          FontSize="14"
+                          FontAttributes="Bold"/>
+                        <Span Text="Abhay"
+                          
+                          FontSize="18"
+                          FontAttributes="Bold"
+                          />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            
+
+            <Label Text="Let's order some fresh fruits and vegetables for you"
+               Style="{StaticResource H2}"
+               LineHeight="1.3"
+               Opacity="0.8"
+               />
+
+            <VerticalStackLayout>
+            <CollectionView ItemsSource="{Binding Categories}"
+                        HeightRequest="175">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Horizontal"
+                                   ItemSpacing="12"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Category">
+                    <Border StrokeShape="RoundRectangle 5"
+                            StrokeThickness="0">
+                        <Grid>
+                            <Image 
+                                   Aspect="AspectFill"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   HeightRequest="175"
+                                   WidthRequest="150"
+                                   Opacity="0.9">
+                                <Image.Source>
+                                    <UriImageSource Uri="{Binding Image}"
+                                                    CachingEnabled="True"/>
+                                </Image.Source>
+                            </Image>
+                            <Border StrokeShape="RoundRectangle 8"
+                                    StrokeThickness="0"
+                                    BackgroundColor="White"
+                                    VerticalOptions="End"
+                                    Margin="5"
+                                    Padding="10">
+                                <Label Text="{Binding Name}"
+                                       FontAttributes="Bold"
+                                       FontSize="16"
+                                       HorizontalTextAlignment="Center"
+                                       TextColor="{StaticResource Mid}"/>
+                            </Border>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>

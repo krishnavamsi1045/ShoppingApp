@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingApp", "ShoppingApp\ShoppingApp.csproj", "{093F7D02-6171-45E0-8124-A13523DA8F9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopingApp.Api", "ShopingApp.Api\ShopingApp.Api.csproj", "{77282B3D-B2F6-4956-9C41-DCA81BF236BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopingUi.Shared", "ShopingUi.Shared\ShopingUi.Shared.csproj", "{2D5DFB71-720A-4A8D-BFCA-C0156C0C4212}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{093F7D02-6171-45E0-8124-A13523DA8F9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{093F7D02-6171-45E0-8124-A13523DA8F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{093F7D02-6171-45E0-8124-A13523DA8F9A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{093F7D02-6171-45E0-8124-A13523DA8F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{093F7D02-6171-45E0-8124-A13523DA8F9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093F7D02-6171-45E0-8124-A13523DA8F9A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{77282B3D-B2F6-4956-9C41-DCA81BF236BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77282B3D-B2F6-4956-9C41-DCA81BF236BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77282B3D-B2F6-4956-9C41-DCA81BF236BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77282B3D-B2F6-4956-9C41-DCA81BF236BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D5DFB71-720A-4A8D-BFCA-C0156C0C4212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D5DFB71-720A-4A8D-BFCA-C0156C0C4212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D5DFB71-720A-4A8D-BFCA-C0156C0C4212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D5DFB71-720A-4A8D-BFCA-C0156C0C4212}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80D46FA8-7A94-4157-9E05-36C521E5F694}
+	EndGlobalSection
+EndGlobal

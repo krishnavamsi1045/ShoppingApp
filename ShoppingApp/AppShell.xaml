@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ShoppingApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ShoppingApp"
+    xmlns:Pages="clr-namespace:ShoppingApp.Pages"
+    Shell.FlyoutBehavior="Flyout">
+
+    <TabBar >
+        
+
+        <ShellContent
+     Title="Home"
+     ContentTemplate="{DataTemplate Pages:HomePage}"
+     Route="HomePage" />
+
+        <ShellContent
+     Title="CartPage"
+     ContentTemplate="{DataTemplate Pages:CartPage}"
+     Route="CartPage" />
+
+        <ShellContent
+     Title="OrderPage"
+     ContentTemplate="{DataTemplate Pages:OrderPage}"
+     Route="OrderPage" />
+
+        <ShellContent
+     Title="ProfilePage"
+     ContentTemplate="{DataTemplate Pages:ProfilePage}"
+     Route="ProfilePage" />
+
+        <ShellContent
+     Title="HelperPage"
+     ContentTemplate="{DataTemplate Pages:HelperPage}"
+     Route="HelperPage" />
+
+
+    </TabBar>
+</Shell>
